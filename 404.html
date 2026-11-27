@@ -40,30 +40,15 @@
       }
     </style>
     <style id="ascea-web">
-      /* Scrollbars: thin and rounded, a soft grey that works on light and dark, no arrow buttons. */
+      /* Scrollbars: none. Pages still scroll with a trackpad, mouse wheel or keyboard; without a bar there is no
+         gutter, so every page keeps the same right edge whether or not it is long enough to scroll. */
       * {
-        scrollbar-width: thin;
-        scrollbar-color: rgba(128, 142, 162, 0.4) transparent;
+        scrollbar-width: none;
       }
       ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-      }
-      ::-webkit-scrollbar-track,
-      ::-webkit-scrollbar-corner {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: rgba(128, 142, 162, 0.4);
-        border: 3px solid transparent;
-        background-clip: content-box;
-        border-radius: 999px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(128, 142, 162, 0.65);
-      }
-      ::-webkit-scrollbar-button {
         display: none;
+        width: 0;
+        height: 0;
       }
       /* Text fields: no browser outline; a mint border and soft ring while typing. */
       input,
@@ -91,6 +76,6 @@
   <body>
     <noscript>Ascea needs JavaScript turned on. You can also use the Ascea iPhone app.</noscript>
     <div id="root"></div>
-  <script src="/_expo/static/js/web/index-352486a83ae8490ac0af0efc5d4f71b6.js" defer></script>
+  <script src="/_expo/static/js/web/index-39db9d360b8c6e8f9db4a2af9a9aa6be.js" defer></script>
 </body>
 </html>
