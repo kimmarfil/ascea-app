@@ -39,11 +39,58 @@
         flex: 1;
       }
     </style>
+    <style id="ascea-web">
+      /* Scrollbars: thin and rounded, a soft grey that works on light and dark, no arrow buttons. */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(128, 142, 162, 0.4) transparent;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track,
+      ::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(128, 142, 162, 0.4);
+        border: 3px solid transparent;
+        background-clip: content-box;
+        border-radius: 999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(128, 142, 162, 0.65);
+      }
+      ::-webkit-scrollbar-button {
+        display: none;
+      }
+      /* Text fields: no browser outline; a mint border and soft ring while typing. */
+      input,
+      textarea {
+        outline: none;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #2fd6a3 !important;
+        box-shadow: 0 0 0 3px rgba(47, 214, 163, 0.22);
+      }
+      /* The browser's own date and time pickers (DateField on the web). */
+      input.ascea-when::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      input.ascea-when::-webkit-calendar-picker-indicator:hover {
+        opacity: 1;
+      }
+    </style>
   <link rel="icon" href="/favicon.ico"/></head>
 
   <body>
     <noscript>Ascea needs JavaScript turned on. You can also use the Ascea iPhone app.</noscript>
     <div id="root"></div>
-  <script src="/_expo/static/js/web/index-e916363c4802b3eefc087d3064a06a35.js" defer></script>
+  <script src="/_expo/static/js/web/index-352486a83ae8490ac0af0efc5d4f71b6.js" defer></script>
 </body>
 </html>
